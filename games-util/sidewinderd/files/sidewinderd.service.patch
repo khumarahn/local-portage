@@ -1,0 +1,10 @@
+diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
+index b659bb4..55f41bc 100644
+--- a/src/CMakeLists.txt
++++ b/src/CMakeLists.txt
+@@ -15,4 +15,4 @@ TARGET_LINK_LIBRARIES(${PROJECT_NAME} stdc++ config++ udev pthread tinyxml2)
+ 
+ INSTALL(TARGETS ${PROJECT_NAME} DESTINATION bin)
+ INSTALL(FILES "${PROJECT_SOURCE_DIR}/etc/sidewinderd.conf" DESTINATION /etc COMPONENT config)
+-INSTALL(FILES "${CMAKE_CURRENT_BINARY_DIR}/sidewinderd.service" DESTINATION lib/systemd/system)
++INSTALL(FILES "${CMAKE_CURRENT_BINARY_DIR}/sidewinderd.service" DESTINATION /lib/systemd/system)
